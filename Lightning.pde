@@ -93,5 +93,7 @@ void mousePressed(){
 }
 
 void keyPressed(){
-    redraw();
+ if (keyPressed == true && (key == 'c' || key == 'C')){
+  redraw();
+ }
 }
