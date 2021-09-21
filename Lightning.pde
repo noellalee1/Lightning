@@ -1,12 +1,12 @@
 int x = 0;
 int y = 200;
 int x2 = x+(int)(Math.random()*10);
-int y2 = y+(int)(Math.random()*18)-9;
+int y2 = y+(int)(Math.random()*20)-10;
 
 int x3 = 400;
 int y3 = 200;
 int x4 = x3-(int)(Math.random()*10);
-int y4 = y3+(int)(Math.random()*18)-9;
+int y4 = y3+(int)(Math.random()*20)-10;
 
 float r = (float)Math.random()*255;
 float g = (float)Math.random()*255;
@@ -29,13 +29,14 @@ void draw(){
   
   stroke(r,g,b);
   
+      //connection
      while (x2 < 200){
        
        line(x,y,x2,y2);
        x = x2;
        y = y2;
        x2 = x+(int)(Math.random()*10);
-       y2 = y+(int)(Math.random()*18)-9;
+       y2 = y+(int)(Math.random()*20)-10;
      }
      
      while (x3 > 200){
@@ -47,7 +48,7 @@ void draw(){
        y4 = y3+(int)(Math.random()*18)-9;
      }
    
-     line (x,y,x3,y3); //connection
+     line (x,y,x3,y3);
      
      if (keyPressed == true && (key == 'c' || key == 'C')){
      
@@ -56,12 +57,12 @@ void draw(){
          x = 0;
          y = 200;
          x2 = x+(int)(Math.random()*10);
-         y2 = y+(int)(Math.random()*18)-9;
+         y2 = y+(int)(Math.random()*20)-10;
    
          x3 = 400;
          y3 = 200;
          x4 = x3-(int)(Math.random()*10);
-         y4 = y3+(int)(Math.random()*18)-9;
+         y4 = y3+(int)(Math.random()*20)-10;
        
           fill(181, 45, 0);
           ellipse(0,200,diam,diam);
@@ -78,12 +79,12 @@ void mousePressed(){
    x = 0;
    y = 200;
    x2 = x+(int)(Math.random()*10);
-   y2 = y+(int)(Math.random()*18)-9;
+   y2 = y+(int)(Math.random()*20)-10;
    
    x3 = 400;
    y3 = 200;
    x4 = x3-(int)(Math.random()*10);
-   y4 = y3+(int)(Math.random()*18)-9;
+   y4 = y3+(int)(Math.random()*20)-10;
    
    r = (float)Math.random()*255;
    g = (float)Math.random()*255;
