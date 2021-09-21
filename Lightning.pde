@@ -45,7 +45,7 @@ void draw(){
        x3 = x4; //400
        y3 = y4; //200
        x4 = x3-(int)(Math.random()*10);
-       y4 = y3+(int)(Math.random()*18)-9;
+       y4 = y3+(int)(Math.random()*20)-10;
      }
    
      line (x,y,x3,y3);
